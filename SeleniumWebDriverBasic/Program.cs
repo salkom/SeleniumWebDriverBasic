@@ -9,8 +9,6 @@ namespace SeleniumWebDriverBasic
     {
         static void Main(string[] args)
         {
-            Console.Write("Start of test\n");
-
             // Create the reference for the browsers
             IWebDriver driver = new ChromeDriver();
 
@@ -30,7 +28,6 @@ namespace SeleniumWebDriverBasic
 
             // Click on the Google search button  
             searchBtn.Click();
-            Thread.Sleep(1000);
 
             // Log the value of the title to the console
             Console.WriteLine(driver.Title);
@@ -38,7 +35,6 @@ namespace SeleniumWebDriverBasic
 
             // Close the browser  
             driver.Close();
-            Console.Write("End of test\n");
         }
     }
 }
